@@ -67,12 +67,12 @@ def extrair_dados_vaga(vaga):  # Define a função que recebe uma vaga (HTML)
         link = vaga.get("url", "N/A")  # Pega o link da vaga; padrão "N/A"
 
         return {  # Retorna um novo dicionário com os dados organizados
-            "titulo": titulo,  # Chave "titulo" recebe o valor da variável titulo
-            "empresa": empresa,  # Chave "empresa" recebe o valor da variável empresa
-            "categoria": categoria,  # Chave "categoria" recebe o valor da variável categoria
-            "tipo": tipo,  # Chave "tipo" recebe o valor da variável tipo
-            "salario": salario,  # Chave "salario" recebe o valor da variável salario
-            "localizacao": ", ".join(localizacao),  # Junta a lista de localizações em uma string separada por vírgula
+            "title": titulo,  # Chave "titulo" recebe o valor da variável titulo
+            "company": empresa,  # Chave "empresa" recebe o valor da variável empresa
+            "category": categoria,  # Chave "categoria" recebe o valor da variável categoria
+            "type": tipo,  # Chave "tipo" recebe o valor da variável tipo
+            "salary": salario,  # Chave "salario" recebe o valor da variável salario
+            "location": ", ".join(localizacao),  # Junta a lista de localizações em uma string separada por vírgula
             "link": link  # Chave "link" recebe o valor da variável link
         }
     except:  # Se qualquer erro acontecer dentro do try

@@ -1,40 +1,42 @@
 # Tech Jobs Intelligence
 
-Sistema de coleta e análise de vagas remotas de tecnologia no mercado internacional.
+System for collecting and analyzing remote tech job opportunities in the international market.
 
-## O que o projeto faz
+## What the project does
 
-- Coleta vagas automaticamente do site [Remotive](https://remotive.com)
-- Extrai título, empresa, categoria, tipo de contrato, salário e localização
-- Salva os dados em CSV
-- Gera gráficos de análise do mercado tech
+* Automatically collects job listings from the [Remotive](https://remotive.com) website
+* Extracts job title, company, category, contract type, salary, and location
+* Saves the collected data into a CSV file
+* Generates charts for tech market analysis
 
-## Tecnologias utilizadas
+## Technologies Used
 
-- `requests` — acessa as páginas web
-- `beautifulsoup4` — interpreta o HTML
-- `fake-useragent` — simula um navegador real
-- `pandas` — organiza e analisa os dados
-- `matplotlib` — gera os gráficos
+* `requests` — accesses web pages
+* `beautifulsoup4` — parses HTML content
+* `fake-useragent` — simulates a real browser
+* `pandas` — organizes and analyzes data
+* `matplotlib` — generates charts and visualizations
 
-## Como rodar
+## How to Run
 
-1. Clone o repositório e abra no VS Code
-2. Instale as dependências:
+1. Clone the repository and open it in VS Code
+2. Install the dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-3. Execute o projeto:
+3. Run the project:
 
+```bash
 python main.py
+```
 
+## Results
 
-## Resultados
+The charts are automatically saved in `output/charts/`:
 
-
-Os gráficos são salvos automaticamente em `output/graficos/`:
-
-- `paises.png` — Top 10 países com mais vagas
-- `contratos.png` — Tipos de contrato mais comuns
-- `cargos.png` — Top 10 cargos com mais vagas
-- `salarios.png` — Vagas com salário especificado
+* `countries.png` — Top 10 countries with the most job openings
+* `contracts.png` — Most common contract types
+* `positions.png` — Top 10 job titles with the most openings
+* `salaries.png` — Job listings with salary information available
